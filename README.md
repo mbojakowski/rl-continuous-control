@@ -16,7 +16,12 @@ Actions are vectors of 4 real numbers between -1 and 1.
 ## Getting Started
 
 The entry point is the Jupyter Notebook.
-The given implementation was run from a Udacity workspace. Depending on your operation system, you would need to install the corresponding Unity environment.
+The given implementation was run from a Udacity workspace. Depending on your operation system, you would need to install the corresponding Unity environment and replace below line accordingly:
+
+```
+env = UnityEnvironment(file_name='/data/Reacher_One_Linux_NoVis/Reacher_One_Linux_NoVis.x86_64')
+```
+
 Otherwise, all code cells need to be executed one after the other.
 The first code cell installed all necessary dependencies, defined in the pip *requirements.txt* file.
 
