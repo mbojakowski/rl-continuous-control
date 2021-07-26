@@ -13,6 +13,9 @@ More precisely, it is based on DDPG, and is partially inspired from a DDPG imple
 The environment state is a vector of 33 elements.
 Actions are vectors of 4 real numbers between -1 and 1.
 
+A reward of +0.1 is given at every time step on which the arm points to the (moving) target location.
+This is hence a continuous task (as opposed to an episodic task), and the goal is for the arm to point as much time as possible towards the target location.
+It is observed that an episode stops after 1000 time steps.
 The problem is considered solved when the agent achieved a minimum average score of 30 over 100 consecutive episodes.
 
 ## Getting Started
